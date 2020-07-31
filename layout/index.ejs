@@ -1,0 +1,12 @@
+<section class="post-container">
+    <% site.posts.forEach(function(post) { %>
+        <section class="post-article">
+            <p><%- date(post.date, "LL") %></p>
+            <a href="/<%- post.path %> "><%- post.title %></a>
+            <section class="desc">
+                <%- post.more.replace(/<\/?.+?\/?>/g, "").substring(0, 100) %>
+                ... 
+            </section>
+        </section>
+    <% }); %> 
+</section>

@@ -1,0 +1,14 @@
+title: tons
+
+author: 0x0ffff
+
+menu: 
+  Home: /
+  Archives: /archives
+  About: /about
+rss: /atom.xml
+
+links: 
+  github: https://github.com/0x0ffff
+
+copyright: '<strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可'
