@@ -1,21 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <% if (config.language) { %>lang="<%- config.language %>" <% } %>>
 <head>
+    <% 
+        var title = page.title;
+        if (is_archive()){
+            title = __('archive');
+            if (is_month()){
+            title += '：' + page.year + '/' + page.month;
+            } else if (is_year()){
+            title += '：' + page.year;
+            }
+        } else if (is_category()){
+            title = __('count.categories') + '：' + page.category;
+        } else if (is_tag()){
+                title = __('count.tags') + '：' + page.tag;
+        }
+    %>
+    <title><% if (title){ %><%= title %> - <% } %><%= config.title %></title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <meta name="description" content="<%= config.description %> ">
+     <!-- Custom CSS -->
+     <%- css('css/style.css') %>
 </head>
 <body>
-    <div class="tons-header">
-        <%- partial('_partial/header') %> 
-    </div>
+    <section class="full-page"> 
+        <div class="tons-header">
+            <%- partial('_partial/header') %> 
+        </div>
+        
+        <div class="tons-container">
+            <%- body %>
+        </div>
     
-    <div class="tons-container">
-        <%- body %>
-    </div>
-
-    <div class="tons-footer">
-        <%- partial('_partial/footer') %> 
-    </div>
+        <div class="tons-footer">
+            <%- partial('_partial/footer') %> 
+        </div>
+    </section>
 </body>
 </html>
