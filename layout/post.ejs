@@ -1,14 +1,14 @@
 <section class="container">
-    <div>
-        <p>
+    <div class="article-info">
+        <p class="date">
             <%- date(page.date, "LL") %>
         </p>
-        <h2>
+        <h2 class="title">
             <%= page.title %> 
         </h2>
     </div>
     
-    <div id="article">
+    <section id="article" class="font-one article-detail">
         <%- page.content %>
-    </div>
+    </section>
 </section>

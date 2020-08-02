@@ -21,10 +21,11 @@ a {
 
 /* font */
 .font-one {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 2rem;
     font-style: normal;
-    font-family: Menlo, Monaco, "Droid Sans", "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
+    font-family: microsoft yahei;
+    /* font-family: Menlo, Monaco, "Droid Sans", "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif; */
 }
 
 .font-one p {
@@ -99,6 +100,31 @@ section.post-article a.title:hover {
 
 section.post-article section.desc {
     margin-top: 1.5rem;
+}
+
+/* single article */
+.article-info p.date {
+    color: #a3abb3;
+    font-size: .9rem;
+    margin-top: .5rem;
+}
+
+.article-info h2.title {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 0.3rem;
+    color: #444;
+    font-weight: 400;
+}
+
+.article-detail a {
+    color: rgba(0,0,0,0.5);
+    /* border-color: transparent; */
+}
+
+.article-detail a:hover {
+    color: #000;
+    border-bottom: 2px solid #000;
 }
 
 /* footer */

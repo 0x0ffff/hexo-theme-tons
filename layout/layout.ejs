@@ -21,6 +21,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
     <meta name="description" content="<%= config.description %> ">
      <!-- Custom CSS -->
+     <%- css('lib/highlight/atom-one-dark.css') %>
      <%- css('css/style.css') %>
 </head>
 <body>
@@ -37,5 +38,8 @@
             <%- partial('_partial/footer') %> 
         </div>
     </section>
+
+    <%- js('/lib/highlight/highlight.pack.js') %>
+    <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
