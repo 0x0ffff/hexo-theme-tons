@@ -3,3 +3,102 @@
     margin: 0;
     padding: 0;
 }
+
+html {
+    font-size: 14px;
+    font-family: PingFangSC-Regular, Microsoft Yahei UI, Noto Sans CJK SC DemiLight, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+/* font */
+.font-one {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-style: normal;
+    font-family: Menlo, Monaco, "Droid Sans", "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
+}
+
+.font-one p {
+    margin-bottom: 1.45rem;
+}
+
+/* full page */
+.full-page {
+    min-height: 80vh;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 5px 10px;
+    max-width: 960px;
+}
+
+/* header */
+.tons-header {
+    background-color: #fcfcfc;
+    border-bottom: solid 1px #ddd;
+}
+
+.tons-header ul {
+    margin: 0 auto 0;
+    padding: 1rem 0;
+    display: flex;
+    vertical-align: top;
+}
+
+.tons-header ul li {
+    vertical-align: top;
+    margin: 0 1.5em 0 0;
+    font-size: 1.1rem;
+}
+
+header a.menu__item {
+    color: rgba(0,0,0,0.3);
+    border-color: transparent;
+    display: inline-block;
+}
+
+header a.menu__item:hover {
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+/* index post */
+section.post-article {
+    padding: 3rem 0 2rem;
+    border-bottom: solid 1px #ddd;
+}
+
+section.post-article a.title {
+    font-size: 1.5rem;
+    color: #444;
+    text-decoration: none;
+    font-weight: 400;
+    border-bottom: none;
+}
+
+section.post-article p.date {
+    color: #a3abb3;
+    font-size: .9rem;
+    margin-top: .5rem;
+}
+
+section.post-article a.title:hover {
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+section.post-article section.desc {
+    margin-top: 1.5rem;
+}
+
+/* footer */

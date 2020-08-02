@@ -1,13 +1,13 @@
-<header class="menu">
+<header class="menu container">
     <ul>
         <% for (i in theme.menu) { %>
             <li>
-                <a href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+                <a href="<%- url_for(theme.menu[i]) %>" class="menu__item"><%= i %></a>
             </li>
         <% } %>
         <% if (theme.rss){ %>
             <li>
-                <a href="<%- url_for(theme.rss) %>">RSS</a>
+                <a href="<%- url_for(theme.rss) %>" class="menu__item">RSS</a>
             </li>
         <% } %>
     </ul>

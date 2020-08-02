@@ -1,9 +1,9 @@
-<section class="post-container">
+<section class="post-container container">
     <% site.posts.forEach(function(post) { %>
         <section class="post-article">
-            <p><%- date(post.date, "LL") %></p>
-            <a href="/<%- post.path %> "><%- post.title %></a>
-            <section class="desc">
+            <a class="title" href="/<%- post.path %> "><%- post.title %></a>
+            <p class="date"><%- date(post.date, "LL") %></p>
+            <section class="desc font-one">
                 <%- post.more.replace(/<\/?.+?\/?>/g, "").substring(0, 100) %>
                 ... 
             </section>

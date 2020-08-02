@@ -1,12 +1,14 @@
-<div>
-    <p>
-        <%- date(page.date, "LL") %>
-    </p>
-    <h2>
-        <%= page.title %> 
-    </h2>
-</div>
-
-<div id="article">
-    <%- page.content %>
-</div>
+<section class="container">
+    <div>
+        <p>
+            <%- date(page.date, "LL") %>
+        </p>
+        <h2>
+            <%= page.title %> 
+        </h2>
+    </div>
+    
+    <div id="article">
+        <%- page.content %>
+    </div>
+</section>
