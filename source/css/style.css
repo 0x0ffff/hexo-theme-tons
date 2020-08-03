@@ -40,7 +40,7 @@ a {
 .container {
     margin: 0 auto;
     padding: 5px 10px;
-    max-width: 960px;
+    max-width: 760px;
 }
 
 /* header */
@@ -118,7 +118,7 @@ section.post-article section.desc {
 }
 
 .article-detail a {
-    color: rgba(0,0,0,0.5);
+    /* color: rgba(0,0,0,0.5); */
     /* border-color: transparent; */
 }
 
@@ -128,3 +128,39 @@ section.post-article section.desc {
 }
 
 /* footer */
+
+/* archives */
+.archive {
+    max-width: 700px;
+    margin: 5rem auto;
+}
+
+.archive a:hover {
+    border-bottom: 2px solid #000;
+}
+
+.archive .archive-year {
+    margin: 1.8rem 0;
+}
+
+.archive .post-date {
+    width: 6.5rem;
+    color: #7f8c8d;
+    float: left;
+}
+.archive .post-title {
+    margin-left: 1rem;
+    display: inline-block;
+    word-wrap: break-word;
+}
+
+.archive ul {
+    margin-left: 1.5rem;
+}
+.archive ul li {
+    line-height: 1.6;
+}
+
+.archive .archive-year {
+
+}
