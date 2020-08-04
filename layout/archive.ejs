@@ -7,7 +7,7 @@
             <ul>
             <% posts.sort('date', -1).each(post => { %>
                 <li>
-                    <div class="post-date"><%= date(post.date, 'll') %></div>
+                    <div class="post-date"><%= date(post.date, 'MMM-DD') %></div>
                     <a class="post-title" href="<%- url_for(post.path) %>" ><%- post.title %></a>
                 </li>
             <% }) %>
